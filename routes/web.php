@@ -49,3 +49,12 @@ Route::get('/usuarios/{nome1}/{nome2}', function ($nome1,$nome2) {
     }
 });
 
+Route::get('/v', function () {
+    return view('nome', ['name' => 'Anderson Cruz', 'name2' => 'Anderson Cruz']);
+});
+
+
+Route::get('/sm/{val1}/{val2}', function ($val1, $val2) {
+    return view('soma', ['val1' => $val1, 'val2' => $val2]);
+
+});
